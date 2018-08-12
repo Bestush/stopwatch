@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div id="app"></div>
+    <div id="app2"></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./stopWatch.js"></script>
+    <script>
+        const renderer = new Renderer(
+            new StopWatch,
+            document.getElementById('app')
+        );
+        const renderer2 = new Renderer(
+            new StopWatch,
+            document.getElementById('app2')
+        );
+    </script>
+</body>
+
+</html>
